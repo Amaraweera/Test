@@ -5,11 +5,11 @@ const argv = require('minimist')(process.argv.slice(2));
 
 const {
     greeting = 'Hello',
-    who = 'You',
-    width = 400,
-    height = 500,
-    color = 'Pink',
-    size = 100,
+    who      = 'You',
+    width    = 400,
+    height   = 500,
+    color    = 'Pink',
+    size     = 100,
 } = argv;
 
 const firstReq = {
@@ -32,14 +32,14 @@ async function main() {
 
     blend([{
             buffer: new Buffer(firstImage, 'binary'),
-            x: 0,
-            y: 0,
+            x     : 0,
+            y     : 0,
         }, {
             buffer: new Buffer(secondImage, 'binary'),
-            x: width,
-            y: 0,
+            x     : width,
+            y     : 0,
     }], {
-        width: width * 2,
+        width : width * 2,
         height: height,
         format: 'jpeg',
     }, (err, data) => {
