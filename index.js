@@ -30,14 +30,14 @@ async function main() {
     let firstImage  = await services.fetchImage(firstReq);
     let secondImage = await services.fetchImage(secondReq);
 
-    blend([ {
-        buffer: new Buffer(firstImage, 'binary'),
-        x: 0,
-        y:0,
+    blend([{
+            buffer: new Buffer(firstImage, 'binary'),
+            x: 0,
+            y: 0,
         }, {
             buffer: new Buffer(secondImage, 'binary'),
-        x: width,
-        y: 0,
+            x: width,
+            y: 0,
     }], {
         width: width * 2,
         height: height,
