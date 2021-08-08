@@ -1,8 +1,8 @@
 # Test
 Practical test
 
-# install node modules
+# Install node modules
 run - npm install
 
-# run application
+# Run application
 go to project root and run "node index.js"
